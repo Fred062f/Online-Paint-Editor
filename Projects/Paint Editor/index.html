@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Paint Editor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+</head>
+<body>
+  <div class="columns">
+    <!-- Left Column: Toolbox and Settings -->
+    <div class="column is-one-quarter">
+      <div class="box">
+        <div class="navbar-brand">
+          <h1>Paint Editor ‍🎨</h1>
+        </div>
+        <aside class="menu">
+          <ul class="menu-list">
+            <!-- Brush Options -->
+            <li>
+              <div class="level brush-options">
+              <div class="select">
+                <!-- Dropdown for selecting brush style -->
+                <select id="brush-style" style="font-size: 20px;">
+                  <option>Pen 🖌</option>
+                  <option>Text and emojis</option>
+                </select>
+              </div>
+                <div class="select is-rounded">
+                  <!-- Dropdown for selecting brush size -->
+                  <select id="brush-size">
+                    <option>1</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                    <option>80</option>
+                    <option>90</option>
+                    <option>100</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <!-- Color Options -->
+            <div class="level">
+              <li><a>Color 🏳️‍🌈</a></li>
+              <input id="brush-color" type="color">
+            </div>
+            <!-- Canvas Color Options -->
+            <div class="level">
+              <li><a>Canvas Color 🖼🏳️‍🌈</a></li>
+              <input id="canvas-color" type="color" value="#ffffff">
+            </div>
+            <li>
+              <hr>
+            </li>
+            <!-- Erase and Clear Buttons -->
+            <li><a id="erase">Erase 🧹</a></li>
+            <li><a id="clear-canvas">Blank Canvas 🗑️🖼</a></li>
+            <li>
+              <hr>
+            </li>
+            <!-- Emoji Selection -->
+            <li><a>Click Emoji To Copy To Your Clipboard</a></li>
+            <div class="emoji">
+            <div class="level">
+              <li><a>😃</a></li>
+              <li><a>😋</a></li>
+              <li><a>😍</a></li>
+              <li><a>😂</a></li>
+              <li><a>💗</a></li>
+            </div>
+            <div class="level">
+              <li><a>😎</a></li>
+              <li><a>😈</a></li>
+              <li><a>👽</a></li>
+              <li><a>👾</a></li>
+              <li><a>🎃</a></li>
+            </div>
+            </div>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <!-- Right Column: Canvas Area -->
+    <div class="column" id="canvas"></div>
+  </div>
+  <!-- Include JavaScript File -->
+  <script src="index.js"></script>
+</body>
+</html>

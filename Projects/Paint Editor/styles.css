@@ -1,0 +1,61 @@
+/* Set body margin for spacing */
+body {
+    margin: 25px;
+}
+
+/* Define styles for the canvas container */
+#canvas {
+    min-height: 1000px;
+}
+
+/* Define styles for a box element */
+.box {
+    min-height: 915px;
+    background-color: white;
+}
+
+/* Define styles for h1 elements */
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+/* Define styles for list items */
+ul li {
+    margin-top: 20px;
+}
+
+a {
+    font-size: 20px;
+}
+
+/* Define styles for input elements of type "color" */
+input[type=color] {
+    margin-right: 15px;
+    border-radius: 80%;
+    height: 30px;
+    width: 32px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 80%;
+}
+
+/* Define styles for options within select elements */
+select option {
+    font-size: 20px;
+}
+
+/* Define styles for a container with the class "brush-options" */
+.brush-options {
+    margin-bottom: 25px;
+}
