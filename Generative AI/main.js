@@ -16,7 +16,6 @@ button.addEventListener("click", () => {
             img.style.display = 'none';
         })
         .catch(err => {
-            // Handle the error here
             window.location.reload()
             alert("Error generating text. Please try again.");
         });
